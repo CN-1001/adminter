@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50548
 File Encoding         : 65001
 
-Date: 2020-11-20 13:11:48
+Date: 2020-11-20 20:48:44
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -24,6 +24,8 @@ CREATE TABLE `person` (
   `name` varchar(255) DEFAULT NULL COMMENT '姓名',
   `phone` varchar(14) DEFAULT NULL COMMENT '电话',
   `type` varchar(255) DEFAULT NULL COMMENT '工种',
+  `money` double DEFAULT NULL,
+  `rank` int(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
